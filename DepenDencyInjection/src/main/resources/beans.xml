@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+
+<!--    <bean id="tinni" class="com.seleniumexpress.di.Student">-->
+<!--        &lt;!&ndash;    Setter Injection    &ndash;&gt;-->
+<!--        <property name="studentName" value="Tinni" />-->
+<!--        <property name="id" value="1" />-->
+<!--    </bean>-->
+<!--    <bean id="shilu" class="com.seleniumexpress.di.Student">-->
+<!--        &lt;!&ndash;    Setter Injection    &ndash;&gt;-->
+<!--        <property name="studentName" value="Shilu" />-->
+<!--        <property name="id" value="2" />-->
+<!--    </bean>-->
+
+    <bean id="tinniCon" class="com.seleniumexpress.di.Student">
+        <!--    Constructor Injection    -->
+        <constructor-arg name="id" value="1" />
+        <constructor-arg name="studentName" value="Tinni" />
+    </bean>
+    <bean id="shiluCon" class="com.seleniumexpress.di.Student">
+        <!--    Constructor Injection    -->
+        <constructor-arg name="id" value="2" type="int" />
+<!--        <constructor-arg name="studentName" value="Shilu" />-->
+    </bean>
+</beans>
