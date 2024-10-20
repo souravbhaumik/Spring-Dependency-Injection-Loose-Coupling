@@ -26,3 +26,5 @@ replay_pid*
 # Intellij configuration files
 *.idea/*
 SpringAutowiringQualifier/.idea/*
+*/target
+*/.idea
