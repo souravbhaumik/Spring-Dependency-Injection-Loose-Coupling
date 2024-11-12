@@ -45,7 +45,11 @@ public class StudentDao {
     }
 
     @PostConstruct
-    public void init() throws ClassNotFoundException, SQLException {
+    public void init() throws SQLException, ClassNotFoundException {
+        createStudentDBConnection();
+    }
+
+    public void createStudentDBConnection() throws ClassNotFoundException, SQLException {
 
         // Load Driver
         Class.forName(driver);
